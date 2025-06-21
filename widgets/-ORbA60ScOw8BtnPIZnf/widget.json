@@ -1,0 +1,15 @@
+{
+  "dependency": "dataGrid/pricing",
+  "gsOptions": {
+    "h": 6,
+    "w": 24
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "pricing"
+  },
+  "subtab": "-ORbA6-5ua4OpwjJCjGA",
+  "tab": "-N_dHWeF8um-thlGP_lt",
+  "type": "DataGrid"
+}

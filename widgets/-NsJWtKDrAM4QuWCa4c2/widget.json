@@ -1,0 +1,15 @@
+{
+  "dependency": "dataGrid/subAssemblies",
+  "gsOptions": {
+    "h": 6,
+    "w": 24
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "subAssemblies"
+  },
+  "subtab": "-NsJWtHcBpa7N9S4lMEE",
+  "tab": "-NqlzD-AGLa0G4BGHn9V",
+  "type": "DataGrid"
+}

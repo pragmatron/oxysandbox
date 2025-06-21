@@ -1,0 +1,15 @@
+{
+  "dependency": "dataGrid/assemblies",
+  "gsOptions": {
+    "h": 6,
+    "w": 24
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "assemblies"
+  },
+  "subtab": "-NkQp7de2VNr20vItFoF",
+  "tab": "-NqlzD-AGLa0G4BGHn9V",
+  "type": "DataGrid"
+}

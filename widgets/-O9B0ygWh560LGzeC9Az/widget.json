@@ -1,0 +1,14 @@
+{
+  "dependency": "dataGrid/jobs",
+  "gsOptions": {
+    "h": 6,
+    "w": 24
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "jobs"
+  },
+  "tab": "-O9B0yeWUQVDG757R5vy",
+  "type": "DataGrid"
+}

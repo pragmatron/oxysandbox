@@ -1,0 +1,14 @@
+{
+  "dependency": "dataGrid/jobtickets",
+  "gsOptions": {
+    "h": 6,
+    "w": 24
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "jobtickets"
+  },
+  "tab": "-OEFPAZIynTzNJmwtpbd",
+  "type": "DataGrid"
+}

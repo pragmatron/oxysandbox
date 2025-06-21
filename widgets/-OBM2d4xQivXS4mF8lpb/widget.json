@@ -1,0 +1,14 @@
+{
+  "dependency": "dataGrid/code",
+  "gsOptions": {
+    "h": 6,
+    "w": 24
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "code"
+  },
+  "tab": "-OBM2d3PRpgCEyMRIs5y",
+  "type": "DataGrid"
+}

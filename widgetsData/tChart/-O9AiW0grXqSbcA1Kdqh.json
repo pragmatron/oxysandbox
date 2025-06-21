@@ -1,0 +1,43 @@
+{
+  "chartName": "Sales By Part",
+  "chartType": "bar",
+  "colorPalette": {
+    "colorPalette": {
+      "value": "default"
+    }
+  },
+  "datalabels": {
+    "hidden": false
+  },
+  "filterValues": {
+    "hidden": false
+  },
+  "groupBy": [
+    {
+      "column": "$part$display",
+      "key": "-OMbeSkWMNucWxcWSOQ-"
+    }
+  ],
+  "lineOptions": [
+    {
+      "color": false,
+      "dashed": false,
+      "line": false,
+      "points": false,
+      "tension": true
+    }
+  ],
+  "metrics": [
+    {
+      "column": "totalLineAmount",
+      "customFormatValue": "",
+      "format": "$0,0.00",
+      "key": "-OMbeSl7T3aWK5DbAtJw",
+      "operator": "sum"
+    }
+  ],
+  "metricsSort": "ASC",
+  "stackedMetrics": {
+    "stacked": true
+  }
+}

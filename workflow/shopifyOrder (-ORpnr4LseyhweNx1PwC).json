@@ -1,0 +1,72 @@
+{
+  "data": {
+    "metaData": {
+      "id": "-ORpnr4LseyhweNx1PwC",
+      "statusField": ""
+    },
+    "nodes": [
+      {
+        "id": "node1748954824087",
+        "x": 125.57539667401996,
+        "y": 108.16963740757534,
+        "name": "start-event",
+        "label": "Start Event",
+        "clazz": "startEvent",
+        "icon": {
+          "name": "flag",
+          "color": "hsl(154, 64%, 49%)"
+        },
+        "attachment": {},
+        "outcomes": [],
+        "customWidth": 250,
+        "customHeight": 60
+      },
+      {
+        "id": "node1748954832489",
+        "x": 327.0039681025914,
+        "y": 308.16963740757535,
+        "name": "script-task",
+        "label": "Script Task",
+        "clazz": "scriptTask",
+        "icon": {
+          "name": "terminal",
+          "color": "hsl(218, 54%, 20%)"
+        },
+        "attachment": {},
+        "outcomes": [],
+        "customWidth": 250,
+        "customHeight": 60
+      }
+    ],
+    "edges": [
+      {
+        "id": "db6d2ee7-6b5f-4ef1-b234-eebee99ec395",
+        "source": "node1748954824087",
+        "target": "node1748954832489",
+        "startSocket": "bottom",
+        "endSocket": "top",
+        "label": "Start Event",
+        "targetLabel": "Script Task",
+        "style": {}
+      }
+    ],
+    "transform": {
+      "x": 1,
+      "y": 0,
+      "scale": 0.7,
+      "isAnimated": false
+    },
+    "settings": {
+      "isWorkflowTransformationEnabled": true,
+      "isNodesAlignmentEnabled": true,
+      "workflowMode": "default",
+      "isCompact": false
+    }
+  },
+  "handleAsSingleScript": true,
+  "logLevels": [
+    "debug"
+  ],
+  "name": "shopifyOrder",
+  "schema": "{\"swagger\":\"2.0\",\"info\":{\"title\":\"shopifyOrder\"},\"host\":\"us-central1-tangledev00.cloudfunctions.net\",\"basePath\":\"/webhook/undefined\",\"schemes\":[\"https\"],\"consumes\":[\"application/json\"],\"produces\":[\"application/json\"],\"paths\":{\"undefined\":{\"post\":{\"tags\":[],\"description\":\"\",\"produces\":[\"application/json\"],\"parameters\":[],\"responses\":{\"200\":{\"description\":\"response\",\"schema\":{\"type\":\"object\",\"properties\":{}}}}}}}}"
+}

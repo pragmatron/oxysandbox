@@ -1,0 +1,94 @@
+{
+  "data": {
+    "metaData": {
+      "id": "-OMMxHgXye95ICvKRna-",
+      "statusField": ""
+    },
+    "nodes": [
+      {
+        "id": "node1743084939880",
+        "x": 578.5714285714286,
+        "y": 577.1428571428572,
+        "name": "start-event",
+        "label": "Start Event",
+        "clazz": "startEvent",
+        "icon": {
+          "name": "flag",
+          "color": "hsl(154, 64%, 49%)"
+        },
+        "attachment": {},
+        "outcomes": [],
+        "customWidth": 250,
+        "customHeight": 60
+      },
+      {
+        "id": "node1743084941101",
+        "x": 1128.5714285714287,
+        "y": 794.2857142857143,
+        "name": "script-task",
+        "label": "get data",
+        "clazz": "scriptTask",
+        "icon": {
+          "name": "terminal",
+          "color": "hsl(218, 54%, 20%)"
+        },
+        "attachment": {},
+        "outcomes": [],
+        "customWidth": 250,
+        "customHeight": 60
+      },
+      {
+        "id": "node1743084945177",
+        "x": 1697.1428571428573,
+        "y": 698.5714285714287,
+        "name": "end-event",
+        "label": "End Event",
+        "clazz": "endEvent",
+        "icon": {
+          "name": "stop-circle",
+          "color": "hsl(348, 91%, 59%)"
+        },
+        "attachment": {},
+        "outcomes": [],
+        "customWidth": 250,
+        "customHeight": 60
+      }
+    ],
+    "edges": [
+      {
+        "id": "6892bf83-8bd8-4aa7-acbc-175e5ab2cb13",
+        "source": "node1743084939880",
+        "target": "node1743084941101",
+        "startSocket": "right",
+        "endSocket": "left",
+        "label": "Start Event",
+        "targetLabel": "Script Task",
+        "style": {}
+      },
+      {
+        "id": "f02a69a2-f891-4a1b-a5ec-731d1425539e",
+        "source": "node1743084941101",
+        "target": "node1743084945177",
+        "startSocket": "right",
+        "endSocket": "left",
+        "label": "Script Task",
+        "targetLabel": "End Event",
+        "style": {}
+      }
+    ],
+    "transform": {
+      "x": 161,
+      "y": 132,
+      "scale": 0.7,
+      "isAnimated": false
+    },
+    "settings": {
+      "isWorkflowTransformationEnabled": true,
+      "isNodesAlignmentEnabled": true,
+      "workflowMode": "default",
+      "isCompact": false
+    }
+  },
+  "handleAsSingleScript": true,
+  "name": "getnetapi"
+}

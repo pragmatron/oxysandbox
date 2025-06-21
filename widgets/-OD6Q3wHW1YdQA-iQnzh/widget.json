@@ -1,0 +1,14 @@
+{
+  "dependency": "dataGrid/cars",
+  "gsOptions": {
+    "h": 6,
+    "w": 24
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "cars"
+  },
+  "tab": "-OD6Q3vB9ld_LfqN3LaS",
+  "type": "DataGrid"
+}

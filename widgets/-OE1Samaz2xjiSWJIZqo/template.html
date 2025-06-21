@@ -1,0 +1,108 @@
+<template>
+  <div class="table-container">
+    <div class="header">Tesla Lost Hills</div>
+    <div class="content">
+      <div 
+        v-for="(entry, index) in entries" 
+        :key="index"
+        :class="['row', { flash: entry.flash }]"
+      >
+        <div class="column1">{{ entry.type }}</div>
+        <div class="column2">{{ entry.code }}</div>
+        <div class="column3">{{ entry.date }}</div>
+      </div>
+      
+      <div class="divider"></div>
+      
+      <div :class="['row', 'bottom-row', { flash: fleetwoodEntry.flash }]">
+        <div class="column1">{{ fleetwoodEntry.type }}</div>
+        <div class="column2">{{ fleetwoodEntry.code }}</div>
+        <div class="column3">{{ fleetwoodEntry.date }}</div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+module.exports = {
+  name: 'TeslaLostHills',
+  
+  data() {
+    return {
+      entries: [
+        { type: 'MV', code: '', date: '12/10/2024', flash: false },
+        { type: 'EV Swbd 1', code: '50-16553 A', date: '1/22/2025', flash: true },
+        { type: 'EV Swbd 2', code: '50-16553 B', date: '1/23/2025', flash: false },
+        { type: 'EV Swbd 3', code: '50-16553 C', date: '1/23/2025', flash: true },
+        { type: 'EV Swbd 4', code: '50-16553 D', date: '1/29/2025', flash: false },
+        { type: 'EV Swbd 5', code: '50-16553 E', date: '1/29/2025', flash: true },
+        { type: 'EV Swbd 6', code: '50-16553 F', date: '1/29/2025', flash: false },
+        { type: 'PV Swbd 1', code: '50-16553 G', date: '2/5/2025', flash: true },
+        { type: 'PV Swbd 2', code: '50-16553 H', date: '2/5/2025', flash: false },
+        { type: 'PV Swbd 3', code: '50-16553 I', date: '2/5/2025', flash: true },
+        { type: 'PV Swbd 4', code: '50-16553 J', date: '2/5/2025', flash: false },
+        { type: 'PV Swbd 5', code: '50-16553 K', date: '2/5/2025', flash: false }
+      ],
+      fleetwoodEntry: {
+        type: 'Fleetwood Temp Power & pedestals',
+        code: '55-17113 2of5',
+        date: '12/16/2024',
+        flash: true
+      }
+    }
+  }
+}
+</script>
+
+<style scoped>
+.table-container {
+  background: #FFB800;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  padding: 2px 0;
+  border-radius: 3px;
+}
+
+.column1 {
+  width: 120px;
+}
+
+.column2 {
+  width: 150px;
+}
+
+.column3 {
+  width: 100px;
+}
+
+.divider {
+  border-top: 1px solid rgba(0,0,0,0.2);
+  margin: 5px 0;
+}
+
+.bottom-row {
+  margin-top: 5px;
+}
+
+@keyframes flash {
+  0% { background-color: #FFB800; }
+  50% { background-color: #FFF2CC; }
+  100% { background-color: #FFB800; }
+}
+
+.flash {
+  animation: flash 2s infinite;
+}
+</style>

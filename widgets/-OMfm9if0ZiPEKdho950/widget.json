@@ -1,0 +1,16 @@
+{
+  "dependency": "dataGrid/oAuth2",
+  "gsOptions": {
+    "h": 6,
+    "w": 24,
+    "x": 0,
+    "y": 2
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "oAuth2"
+  },
+  "tab": "-OMfm9g13L8czV66nygk",
+  "type": "DataGrid"
+}

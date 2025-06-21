@@ -1,0 +1,13 @@
+{
+  "gsOptions": {
+    "h": 6,
+    "w": 24
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "machines"
+  },
+  "tab": "-OA3nQuVWWXil_lDxUnJ",
+  "type": "DataGrid"
+}

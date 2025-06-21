@@ -1,0 +1,24 @@
+.dataGridEditRow__comments{
+
+    display: none !important;
+}
+
+.btn-danger{
+
+    display: none;
+}
+
+.card-header-tabs{
+
+    display: none;
+}
+
+.collapseFormItem .title{
+
+    display: none;
+}
+
+.dataGridHeader__wrapper{
+
+    display: none;
+}

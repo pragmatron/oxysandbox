@@ -1,0 +1,15 @@
+{
+  "dependency": "dataGrid/priceLevels",
+  "gsOptions": {
+    "h": 6,
+    "w": 24
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "priceLevels"
+  },
+  "subtab": "-ORb9Zo17Bs9srtLbib1",
+  "tab": "-N_dHWeF8um-thlGP_lt",
+  "type": "DataGrid"
+}

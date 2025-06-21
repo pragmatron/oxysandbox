@@ -1,0 +1,15 @@
+{
+  "dependency": "dataGrid/tCMappings",
+  "gsOptions": {
+    "h": 6,
+    "w": 24
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "tCMappings"
+  },
+  "subtab": "-OOhhExZO4i0yXvucoOB",
+  "tab": "-NZQQs9Gj86cPY8Oc51P",
+  "type": "DataGrid"
+}

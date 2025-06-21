@@ -1,0 +1,7 @@
+<div>
+  <ul>
+    <li v-for="operation in $getGrid('workOrderMaterials')" :key="operation.rowKey">
+      {{ operation.name }}
+    </li>
+  </ul>
+<div>

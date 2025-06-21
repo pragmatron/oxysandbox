@@ -1,0 +1,16 @@
+{
+  "dependency": "dataGrid/orderstwo",
+  "gsOptions": {
+    "h": 6,
+    "w": 24,
+    "x": 0,
+    "y": 0
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "orderstwo"
+  },
+  "tab": "-O9AMF19GKafNVRriTB_",
+  "type": "DataGrid"
+}

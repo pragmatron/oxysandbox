@@ -1,0 +1,22 @@
+{
+  "classes": "",
+  "gsOptions": {
+    "h": 6,
+    "w": 24
+  },
+  "layout": "b-card",
+  "options": {
+    "availableViews": [
+      "default"
+    ],
+    "view": "default"
+  },
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "customers"
+  },
+  "styles": "",
+  "tab": "-OT6myvxZoVIL0FN7Xh_",
+  "title": "",
+  "type": "DataGrid"
+}

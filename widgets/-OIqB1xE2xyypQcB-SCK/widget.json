@@ -1,0 +1,14 @@
+{
+  "dependency": "dataGrid/batchesUsed",
+  "gsOptions": {
+    "h": 6,
+    "w": 24
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "batchesUsed"
+  },
+  "tab": "-OIqB1vqmrGzJysaaTHG",
+  "type": "DataGrid"
+}

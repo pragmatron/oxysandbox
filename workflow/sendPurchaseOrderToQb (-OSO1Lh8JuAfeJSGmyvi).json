@@ -1,0 +1,403 @@
+{
+  "data": {
+    "metaData": {
+      "id": "-OSO1Lh8JuAfeJSGmyvi",
+      "statusField": ""
+    },
+    "nodes": [
+      {
+        "id": "node1749545496805",
+        "x": 475.7142857142857,
+        "y": 358.5714285714286,
+        "name": "start-event",
+        "label": "Start Event",
+        "clazz": "startEvent",
+        "icon": {
+          "name": "flag",
+          "color": "hsl(154, 64%, 49%)"
+        },
+        "attachment": {},
+        "outcomes": [],
+        "customWidth": 250,
+        "customHeight": 60
+      },
+      {
+        "id": "node1749545498553",
+        "x": 457,
+        "y": 588,
+        "name": "script-task",
+        "label": "get token",
+        "clazz": "scriptTask",
+        "icon": {
+          "name": "terminal",
+          "color": "hsl(218, 54%, 20%)"
+        },
+        "attachment": {},
+        "outcomes": [],
+        "customWidth": 250,
+        "customHeight": 60
+      },
+      {
+        "id": "node1749545502208",
+        "x": 501,
+        "y": 803,
+        "name": "script-task",
+        "label": "refresh token",
+        "clazz": "scriptTask",
+        "icon": {
+          "name": "terminal",
+          "color": "hsl(218, 54%, 20%)"
+        },
+        "attachment": {},
+        "outcomes": [],
+        "customWidth": 250,
+        "customHeight": 60
+      },
+      {
+        "id": "node1749545516480",
+        "x": 856,
+        "y": 404,
+        "name": "script-task",
+        "label": "find vendor",
+        "clazz": "scriptTask",
+        "icon": {
+          "name": "terminal",
+          "color": "hsl(218, 54%, 20%)"
+        },
+        "attachment": {},
+        "outcomes": [],
+        "customWidth": 250,
+        "customHeight": 60
+      },
+      {
+        "id": "node1749545540882",
+        "x": 1076,
+        "y": 670,
+        "name": "decision",
+        "label": "Decision",
+        "clazz": "decision",
+        "icon": {
+          "name": "check-circle",
+          "color": "hsl(11, 96%, 62%)"
+        },
+        "attachment": {},
+        "outcomes": [
+          {
+            "id": "outcome1749545566202",
+            "text": "vendor found",
+            "expression": "context.vendor",
+            "idx": 1
+          },
+          {
+            "id": "outcome1749545575881",
+            "text": "vendor not found",
+            "expression": "!context.vendor",
+            "idx": 2
+          }
+        ],
+        "customWidth": 250,
+        "customHeight": 60
+      },
+      {
+        "id": "node1749545586282",
+        "x": 1533,
+        "y": 369,
+        "name": "script-task",
+        "label": "find item po lines",
+        "clazz": "scriptTask",
+        "icon": {
+          "name": "terminal",
+          "color": "hsl(218, 54%, 20%)"
+        },
+        "attachment": {},
+        "outcomes": [],
+        "customWidth": 250,
+        "customHeight": 60
+      },
+      {
+        "id": "node1749545598208",
+        "x": 1533,
+        "y": 747,
+        "name": "script-task",
+        "label": "create vendor",
+        "clazz": "scriptTask",
+        "icon": {
+          "name": "terminal",
+          "color": "hsl(218, 54%, 20%)"
+        },
+        "attachment": {},
+        "outcomes": [],
+        "customWidth": 250,
+        "customHeight": 60
+      },
+      {
+        "id": "node1749545625261",
+        "x": 1829,
+        "y": 553,
+        "name": "decision",
+        "label": "Any Purchase Line Items Missing?",
+        "clazz": "decision",
+        "icon": {
+          "name": "check-circle",
+          "color": "hsl(11, 96%, 62%)"
+        },
+        "attachment": {},
+        "outcomes": [
+          {
+            "id": "outcome1749545638302",
+            "text": "missing",
+            "expression": "context.missingItems",
+            "idx": 1
+          },
+          {
+            "id": "outcome1749545647937",
+            "text": "all found",
+            "expression": "!context.missingItems",
+            "idx": 2
+          }
+        ],
+        "customWidth": 250,
+        "customHeight": 60
+      },
+      {
+        "id": "node1749545650793",
+        "x": 2830,
+        "y": 333,
+        "name": "end-event",
+        "label": "End Event",
+        "clazz": "endEvent",
+        "icon": {
+          "name": "stop-circle",
+          "color": "hsl(348, 91%, 59%)"
+        },
+        "attachment": {},
+        "outcomes": [],
+        "customWidth": 250,
+        "customHeight": 60
+      },
+      {
+        "id": "node1749545656233",
+        "x": 2830,
+        "y": 776,
+        "name": "script-task",
+        "label": "create po",
+        "clazz": "scriptTask",
+        "icon": {
+          "name": "terminal",
+          "color": "hsl(218, 54%, 20%)"
+        },
+        "attachment": {},
+        "outcomes": [],
+        "customWidth": 250,
+        "customHeight": 60
+      },
+      {
+        "id": "node1749546218435",
+        "x": 2210,
+        "y": 835,
+        "name": "decision",
+        "label": "update or create",
+        "clazz": "decision",
+        "icon": {
+          "name": "check-circle",
+          "color": "hsl(11, 96%, 62%)"
+        },
+        "attachment": {},
+        "outcomes": [
+          {
+            "id": "outcome1749546245678",
+            "text": "update",
+            "expression": "context.payload.purchaseOrderId",
+            "idx": 1
+          },
+          {
+            "id": "outcome1749546250246",
+            "text": "create",
+            "expression": "!context.payload.purchaseOrderId",
+            "idx": 2
+          }
+        ],
+        "customWidth": 250,
+        "customHeight": 60
+      },
+      {
+        "id": "node1749546221936",
+        "x": 2607,
+        "y": 607,
+        "name": "script-task",
+        "label": "update po",
+        "clazz": "scriptTask",
+        "icon": {
+          "name": "terminal",
+          "color": "hsl(218, 54%, 20%)"
+        },
+        "attachment": {},
+        "outcomes": [],
+        "customWidth": 250,
+        "customHeight": 60
+      }
+    ],
+    "edges": [
+      {
+        "id": "1a60d36e-ff6a-407c-8343-b426bbfc3909",
+        "source": "node1749545496805",
+        "target": "node1749545498553",
+        "startSocket": "bottom",
+        "endSocket": "top",
+        "label": "Start Event",
+        "targetLabel": "Script Task",
+        "style": {}
+      },
+      {
+        "id": "f9c13ea2-9ac7-4e42-97f0-63b8c7dd5d55",
+        "source": "node1749545498553",
+        "target": "node1749545502208",
+        "startSocket": "bottom",
+        "endSocket": "top",
+        "label": "Script Task",
+        "targetLabel": "Script Task",
+        "style": {}
+      },
+      {
+        "id": "6f68cd5e-e2bf-4224-9cf8-c1e5b0f45942",
+        "source": "node1749545502208",
+        "target": "node1749545516480",
+        "startSocket": "right",
+        "endSocket": "bottom",
+        "label": "refresh token",
+        "targetLabel": "find vendor",
+        "style": {}
+      },
+      {
+        "id": "95e8c287-4ff8-4cad-a178-4d975daa6dbc",
+        "source": "node1749545516480",
+        "target": "node1749545540882",
+        "startSocket": "right",
+        "endSocket": "top",
+        "label": "find vendor",
+        "targetLabel": "Decision",
+        "style": {}
+      },
+      {
+        "id": "7bf4d6d3-a024-4b25-8c89-185ee49094de",
+        "source": "outcome1749545566202",
+        "target": "node1749545586282",
+        "startSocket": "right",
+        "endSocket": "left",
+        "label": "vendor found",
+        "targetLabel": "Script Task",
+        "expression": "context.vendor",
+        "style": {}
+      },
+      {
+        "id": "39b21082-ddc1-4ec3-a0ff-934264912845",
+        "source": "outcome1749545575881",
+        "target": "node1749545598208",
+        "startSocket": "right",
+        "endSocket": "left",
+        "label": "vendor not found",
+        "targetLabel": "Script Task",
+        "expression": "!context.vendor",
+        "style": {}
+      },
+      {
+        "id": "afb8aa7b-be6c-4f64-9f5d-832e199f0680",
+        "source": "node1749545598208",
+        "target": "node1749545586282",
+        "startSocket": "top",
+        "endSocket": "bottom",
+        "label": "Script Task",
+        "targetLabel": "find item po lines",
+        "style": {}
+      },
+      {
+        "id": "30130e17-f9a8-40e6-8bc7-b1b9eda7e9d5",
+        "source": "node1749545586282",
+        "target": "node1749545625261",
+        "startSocket": "right",
+        "endSocket": "left",
+        "label": "find item po lines",
+        "targetLabel": "Decision 6aa0",
+        "style": {}
+      },
+      {
+        "id": "49d7d801-1cc8-4986-85b7-349c316005cf",
+        "source": "outcome1749545638302",
+        "target": "node1749545650793",
+        "startSocket": "right",
+        "endSocket": "left",
+        "label": "missing",
+        "targetLabel": "End Event",
+        "expression": "context.missingItems",
+        "style": {}
+      },
+      {
+        "id": "f2eaae19-d00c-4923-be0e-c4d62dbbf1a8",
+        "source": "node1749545656233",
+        "target": "node1749545650793",
+        "startSocket": "top",
+        "endSocket": "bottom",
+        "label": "Script Task",
+        "targetLabel": "End Event",
+        "style": {}
+      },
+      {
+        "id": "6693238e-65a4-4aed-82b4-c2405061d952",
+        "source": "outcome1749545647937",
+        "target": "node1749546218435",
+        "startSocket": "right",
+        "endSocket": "left",
+        "label": "all found",
+        "targetLabel": "update or create",
+        "expression": "!context.missingItems",
+        "style": {}
+      },
+      {
+        "id": "75ee6f8e-6442-42b1-8647-49f8d90e2f54",
+        "source": "outcome1749546250246",
+        "target": "node1749545656233",
+        "startSocket": "right",
+        "endSocket": "left",
+        "label": "create",
+        "targetLabel": "create po",
+        "expression": "!context.payload.purchaseOrderId",
+        "style": {}
+      },
+      {
+        "id": "7cafd6dd-008d-4a43-8cb4-bbbdd697cd67",
+        "source": "outcome1749546245678",
+        "target": "node1749546221936",
+        "startSocket": "right",
+        "endSocket": "left",
+        "label": "update",
+        "targetLabel": "update po",
+        "expression": "context.payload.purchaseOrderId",
+        "style": {}
+      },
+      {
+        "id": "0a68110c-8d0f-48f7-9278-88ab497752fe",
+        "source": "node1749546221936",
+        "target": "node1749545650793",
+        "startSocket": "top",
+        "endSocket": "left",
+        "label": "update po",
+        "targetLabel": "End Event",
+        "style": {}
+      }
+    ],
+    "transform": {
+      "x": -77.74134748122063,
+      "y": 72.70337222783976,
+      "scale": 0.5903487070338006,
+      "isAnimated": false
+    },
+    "settings": {
+      "isWorkflowTransformationEnabled": true,
+      "isNodesAlignmentEnabled": true,
+      "workflowMode": "default",
+      "isCompact": false
+    }
+  },
+  "handleAsSingleScript": false,
+  "name": "sendPurchaseOrderToQb"
+}

@@ -1,0 +1,18 @@
+{
+  "chartName": "Inventory",
+  "chartType": "bar",
+  "groupBy": [
+    {
+      "column": "location",
+      "key": "-OMs5FKiY7adX6fryU1U"
+    }
+  ],
+  "metrics": [
+    {
+      "column": "quantity",
+      "format": "0a",
+      "key": "-OMs5GuTqb676xdzdoGp",
+      "operator": "sum"
+    }
+  ]
+}

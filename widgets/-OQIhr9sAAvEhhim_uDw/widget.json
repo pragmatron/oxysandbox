@@ -1,0 +1,16 @@
+{
+  "dependency": "dataGrid/salesRep",
+  "gsOptions": {
+    "h": 18,
+    "w": 24,
+    "x": 0,
+    "y": 0
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "salesRep"
+  },
+  "tab": "-OQIhr87uDEtjkAJ7_ly",
+  "type": "DataGrid"
+}

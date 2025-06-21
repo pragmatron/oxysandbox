@@ -1,0 +1,15 @@
+{
+  "dependency": "dataGrid/salesUnits",
+  "gsOptions": {
+    "h": 6,
+    "w": 24
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "salesUnits"
+  },
+  "subtab": "-ORLQxi_ntLM1ueZqcap",
+  "tab": "-NZQQaXubwP2EQjuVATC",
+  "type": "DataGrid"
+}

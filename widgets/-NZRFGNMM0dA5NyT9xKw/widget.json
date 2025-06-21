@@ -1,0 +1,16 @@
+{
+  "dependency": "dataGrid/purchaseOrders",
+  "gsOptions": {
+    "h": 9,
+    "w": 24,
+    "x": 0,
+    "y": 3
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "purchaseOrders"
+  },
+  "tab": "-NZQQontXXjN0Vo-nP8J",
+  "type": "DataGrid"
+}

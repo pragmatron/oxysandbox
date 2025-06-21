@@ -1,0 +1,15 @@
+{
+  "dependency": "dataGrid/tanks",
+  "gsOptions": {
+    "h": 6,
+    "w": 24
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "tanks"
+  },
+  "subtab": "-OPBvOLeenDHfkiAAg8Y",
+  "tab": "-NZQQaXubwP2EQjuVATC",
+  "type": "DataGrid"
+}

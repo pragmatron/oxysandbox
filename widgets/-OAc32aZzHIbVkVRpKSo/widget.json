@@ -1,0 +1,13 @@
+{
+  "gsOptions": {
+    "h": 6,
+    "w": 24
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "hRPTO"
+  },
+  "tab": "-OAc32Z9KV57FmSroVKl",
+  "type": "DataGrid"
+}

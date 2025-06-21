@@ -1,0 +1,15 @@
+{
+  "dependency": "dataGrid/territory",
+  "gsOptions": {
+    "h": 6,
+    "w": 24
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "territory"
+  },
+  "subtab": "-ORR4RFer5qrGbMAZd3a",
+  "tab": "-NZQRbcH19LNNooOkTCU",
+  "type": "DataGrid"
+}

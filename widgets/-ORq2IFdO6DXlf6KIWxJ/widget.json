@@ -1,0 +1,16 @@
+{
+  "gsOptions": {
+    "h": 24,
+    "w": 24,
+    "x": 0,
+    "y": 2
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "aRInvoices"
+  },
+  "subtab": "-ORq2IC6rk1eLnjoyb_m",
+  "tab": "-O0P6ggwL94dkCCs88Ue",
+  "type": "DataGrid"
+}

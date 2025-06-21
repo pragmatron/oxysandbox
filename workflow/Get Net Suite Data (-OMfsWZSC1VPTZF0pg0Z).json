@@ -1,0 +1,146 @@
+{
+  "data": {
+    "metaData": {
+      "id": "-OMfsWZSC1VPTZF0pg0Z",
+      "statusField": ""
+    },
+    "nodes": [
+      {
+        "id": "node1743419238242",
+        "x": 400,
+        "y": 438.5714285714286,
+        "name": "start-event",
+        "label": "Start Event",
+        "clazz": "startEvent",
+        "icon": {
+          "name": "flag",
+          "color": "hsl(154, 64%, 49%)"
+        },
+        "attachment": {},
+        "outcomes": [],
+        "customWidth": 250,
+        "customHeight": 60
+      },
+      {
+        "id": "node1743419239235",
+        "x": 399,
+        "y": 720,
+        "name": "script-task",
+        "label": "Retrieve Token",
+        "clazz": "scriptTask",
+        "icon": {
+          "name": "terminal",
+          "color": "hsl(218, 54%, 20%)"
+        },
+        "attachment": {},
+        "outcomes": [],
+        "customWidth": 250,
+        "customHeight": 60
+      },
+      {
+        "id": "node1743419248795",
+        "x": 641,
+        "y": 1009,
+        "name": "script-task",
+        "label": "Refresh Token",
+        "clazz": "scriptTask",
+        "icon": {
+          "name": "terminal",
+          "color": "hsl(218, 54%, 20%)"
+        },
+        "attachment": {},
+        "outcomes": [],
+        "customWidth": 250,
+        "customHeight": 60
+      },
+      {
+        "id": "node1743419257588",
+        "x": 1296,
+        "y": 700,
+        "name": "script-task",
+        "label": "Get Data",
+        "clazz": "scriptTask",
+        "icon": {
+          "name": "terminal",
+          "color": "hsl(218, 54%, 20%)"
+        },
+        "attachment": {},
+        "outcomes": [],
+        "customWidth": 250,
+        "customHeight": 60
+      },
+      {
+        "id": "node1743419265004",
+        "x": 1831.4285714285716,
+        "y": 562.8571428571429,
+        "name": "end-event",
+        "label": "End Event",
+        "clazz": "endEvent",
+        "icon": {
+          "name": "stop-circle",
+          "color": "hsl(348, 91%, 59%)"
+        },
+        "attachment": {},
+        "outcomes": [],
+        "customWidth": 250,
+        "customHeight": 60
+      }
+    ],
+    "edges": [
+      {
+        "id": "74d51a26-87c2-40fa-9fc8-7dc7598fbc72",
+        "source": "node1743419238242",
+        "target": "node1743419239235",
+        "startSocket": "bottom",
+        "endSocket": "top",
+        "label": "Start Event",
+        "targetLabel": "Script Task",
+        "style": {}
+      },
+      {
+        "id": "52232550-22d6-4f7c-a1dc-f512c102e7a9",
+        "source": "node1743419239235",
+        "target": "node1743419248795",
+        "startSocket": "bottom",
+        "endSocket": "top",
+        "label": "Retrieve Token",
+        "targetLabel": "Script Task",
+        "style": {}
+      },
+      {
+        "id": "9310c523-9588-4c43-83be-43ea931e2749",
+        "source": "node1743419248795",
+        "target": "node1743419257588",
+        "startSocket": "right",
+        "endSocket": "left",
+        "label": "Refresh Token",
+        "targetLabel": "Script Task",
+        "style": {}
+      },
+      {
+        "id": "fccdb383-1687-416a-8f37-36c67ad3ed20",
+        "source": "node1743419257588",
+        "target": "node1743419265004",
+        "startSocket": "right",
+        "endSocket": "left",
+        "label": "Get Data",
+        "targetLabel": "End Event",
+        "style": {}
+      }
+    ],
+    "transform": {
+      "x": -82.50237778841577,
+      "y": -169.03207173033763,
+      "scale": 0.6351088598312294,
+      "isAnimated": false
+    },
+    "settings": {
+      "isWorkflowTransformationEnabled": true,
+      "isNodesAlignmentEnabled": true,
+      "workflowMode": "default",
+      "isCompact": false
+    }
+  },
+  "handleAsSingleScript": false,
+  "name": "Get Net Suite Data"
+}

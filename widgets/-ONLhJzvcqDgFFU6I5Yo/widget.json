@@ -1,0 +1,22 @@
+{
+  "component": "-Np5ZL8mlj-wNDd_UP9I",
+  "gsOptions": {
+    "h": 4,
+    "w": 9,
+    "x": 12,
+    "y": 11
+  },
+  "layout": "b-card",
+  "offSet": 0,
+  "perPage": 2,
+  "props": {
+    "backgroundColor": "red",
+    "code": "-OA3-dV8BdTP-aqE50gy",
+    "icon": "",
+    "iconAndTextColor": "white",
+    "name": "open work orders"
+  },
+  "subtab": "-NgeZy3oXyrkePQ1U5e7",
+  "tab": "-NZQQaXubwP2EQjuVATC",
+  "type": "custom"
+}

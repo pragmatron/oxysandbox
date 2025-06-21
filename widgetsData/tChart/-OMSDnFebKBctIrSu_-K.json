@@ -1,0 +1,17 @@
+{
+  "chartName": "Inventory Levels",
+  "chartType": "bar",
+  "groupBy": [
+    {
+      "column": "parts",
+      "key": "-OMSDnFdHujfue76s6j2"
+    }
+  ],
+  "metrics": [
+    {
+      "column": "currentAmount",
+      "key": "-OMSDnFdHujfue76s6j1",
+      "operator": "sum"
+    }
+  ]
+}

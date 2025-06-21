@@ -1,0 +1,14 @@
+{
+  "cachingForUsers": "IExbYiRgRLdw4BMqAJyB9omEhov1,nvphi0hEIDeEoCzWFWZnXKcwec93",
+  "globalSearchEnabled": true,
+  "modelsCachingEnabled": true,
+  "regional": {
+    "currency": "$",
+    "date": "MM/DD/YYYY",
+    "time": "MM/DD/YYYY, HH:mm"
+  },
+  "sessionExpirationEnabled": false,
+  "sessionExpirationTime": 0,
+  "sessionTimeMeasure": "hours",
+  "showDataGridRecordsHistory": true
+}

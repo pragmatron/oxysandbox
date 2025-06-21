@@ -1,0 +1,13 @@
+{
+  "gsOptions": {
+    "h": 6,
+    "w": 24
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "assetManagement"
+  },
+  "tab": "-ODwJpht7gW3djSitfvU",
+  "type": "DataGrid"
+}

@@ -1,0 +1,14 @@
+{
+  "dependency": "dataGrid/extractNetSuiteData",
+  "gsOptions": {
+    "h": 6,
+    "w": 24
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "extractNetSuiteData"
+  },
+  "tab": "-OMqxaZBhQN4n6uWjpbQ",
+  "type": "DataGrid"
+}

@@ -1,0 +1,15 @@
+{
+  "dependency": "dataGrid/sOPDocs",
+  "gsOptions": {
+    "h": 6,
+    "w": 24
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "sOPDocs"
+  },
+  "subtab": "-OP77GK9TR50iVTLSxrs",
+  "tab": "-O0P6ggwL94dkCCs88Ue",
+  "type": "DataGrid"
+}

@@ -1,0 +1,25 @@
+{
+  "chartName": "Sales",
+  "chartType": "gauge",
+  "filter": {
+    "condition": "AND",
+    "rules": [
+      {
+        "andOr": "",
+        "expression": false,
+        "hidden": false,
+        "key": "owner",
+        "name": "Owner",
+        "operator": "null"
+      }
+    ]
+  },
+  "metrics": [
+    {
+      "column": "lastEditedBy",
+      "gaugeValue": 0,
+      "key": "-OMSEWqjfU8ruS942R2D",
+      "operator": "sum"
+    }
+  ]
+}

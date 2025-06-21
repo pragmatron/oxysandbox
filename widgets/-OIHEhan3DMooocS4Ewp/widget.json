@@ -1,0 +1,14 @@
+{
+  "dependency": "dataGrid/subsidiary",
+  "gsOptions": {
+    "h": 18,
+    "w": 24
+  },
+  "layout": "b-card",
+  "overflow": "height: auto",
+  "props": {
+    "gridId": "subsidiary"
+  },
+  "tab": "-OIHEruE0EmZB1GnR2H5",
+  "type": "DataGrid"
+}
