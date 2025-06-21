@@ -65,13 +65,6 @@ module.exports = {
           subtitle: 'Open Sales Orders',
           icon: '📊',
           iconColor: 'blue'
-        },
-        {
-          id: 6,
-          title: 'Sales Materials',
-          subtitle: 'Sales Materials',
-          icon: '📋',
-          iconColor: 'teal'
         }
       ]
     }
@@ -87,31 +80,33 @@ module.exports = {
         2: this.navigateToNewCustomer,
         3: this.navigateToNewLead,
         4: this.navigateToCustomerList,
-        5: this.navigateToOpenOrders,
-        6: this.navigateToSalesMaterials
+        5: this.navigateToOpenOrders
       }
       const handler = routes[card.id]
       if (handler) {
         handler()
       }
     },
-    navigateToSalesOrder() {
-      console.log('Navigating to New Sales Order')
+    async navigateToSalesOrder() {
+      const newOrder = await $dgAddRow('opportunities', {})
+      $dgShowEditRowModal('opportunities', newOrder)
+      setTab('-OT6miZU3nSvH-3ayKcE')
     },
-    navigateToNewCustomer() {
-      console.log('Navigating to New Customer')
+    async navigateToNewCustomer() {
+      const newCustomer = await $dgAddRow('customers', {})
+      $dgShowEditRowModal('customers', newCustomer)
+      setTab('-OT6myvxZoVIL0FN7Xh_')
     },
-    navigateToNewLead() {
-      console.log('Navigating to New Lead')
+    async navigateToNewLead() {
+      const newLead = await $dgAddRow('customers', { status: 'lead' })
+      $dgShowEditRowModal('customers', newLead)
+      setTab('-OT6myvxZoVIL0FN7Xh_')
     },
     navigateToCustomerList() {
-      console.log('Navigating to Customer List')
+      setTab('-OT6myvxZoVIL0FN7Xh_')
     },
     navigateToOpenOrders() {
-      console.log('Navigating to Open Sales Orders')
-    },
-    navigateToSalesMaterials() {
-      console.log('Navigating to Sales Materials')
+      setTab('-OT6miZU3nSvH-3ayKcE')
     }
   }
 }
